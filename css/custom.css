@@ -1,0 +1,65 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Droid Sans', sans-serif;
+}
+ul li{
+	list-style-type: none;
+	padding: 0px 10px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/*Navigation*/
+nav{
+	min-height: 70px !important;
+	max-height: 80px !important;
+	margin: 5px !important;
+}
+nav form input{
+	border-radius: 0px!important;
+	width: 200px!important;
+}
+nav form button{
+	border-radius: 0px!important;
+}
+.navbar-ul{
+	margin-top: 5px;
+}
+.navbar-ul li a{
+	text-transform: lowercase;
+}
+
+/*Slides*/
+
+.slide{
+	height: 650px;
+	overflow: hidden;
+}
+.slide-header{
+	text-align: center;
+	font-size: 60px;
+}
+.landing{
+	background-color: black;
+}
+.landing-text{
+	color:white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.landing-img{
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.clearfix{
+	clear:both;
+}
+.round-button{
+	border-radius: 50%;
+}
