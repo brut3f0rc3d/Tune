@@ -9,6 +9,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<div id="fake" style="width:100%; height:80px; background-color: white;"></div>
 	<nav class="navbar">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -30,6 +31,15 @@
 		</div>
 			
 	</nav>
-	<div class="container">
-		
+	<div class="container no-margin">
+		<div class="left-sidebar">
+			<div class="left-menu">
+				<ul>
+					<li>recent releases</li>
+					<li>hot 20</li>
+				</ul>
+			</div>
+		</div>
+		<div class="right-sidebar"></div>
+		<div class="library"></div>
 	</div>

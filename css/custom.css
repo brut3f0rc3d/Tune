@@ -103,3 +103,21 @@ nav .navbar-brand{
 .custom-row{
 	padding-bottom: 20px;
 }
+
+/*Library*/
+.left-sidebar{
+	width: 20%;
+	display:inline-block;
+	background-color: red;
+	min-height: 100%;
+}
+
+.right-sidebar{
+	width:20%;
+	display:inline-block;
+	background-color: yellow;
+	min-height: 100%;
+}
+.no-margin{
+	margin: 0px!important;
+}
