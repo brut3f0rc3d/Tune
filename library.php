@@ -31,15 +31,38 @@
 		</div>
 			
 	</nav>
+	<!--
 	<div class="container no-margin">
 		<div class="left-sidebar">
 			<div class="left-menu">
 				<ul>
 					<li>recent releases</li>
 					<li>hot 20</li>
+					<li>
 				</ul>
 			</div>
 		</div>
 		<div class="right-sidebar"></div>
 		<div class="library"></div>
+	</div>
+	-->
+	<div class="wrapper no-margin">
+		<div id="recommendations">
+			<div class="section-header row">
+				<div class="col-md-12">recommendations</div>
+			</div>
+			<div class="section-body row">
+				<a href="#"><img src="images/albums/1.png" class="album-thumb"></a>
+				<a href="#"><img src="images/albums/1.png" class="album-thumb"></a>
+				<a href="#"><img src="images/albums/1.png" class="album-thumb"></a>
+				<a href="#"><img src="images/albums/1.png" class="album-thumb"></a>
+				<a href="#"><img src="images/albums/1.png" class="album-thumb"></a>
+				<a href="#"><img src="images/albums/1.png" class="album-thumb"></a>
+				<a href="#"><img src="images/albums/1.png" class="album-thumb"></a>
+				<a href="#"><img src="images/albums/1.png" class="album-thumb"></a>
+				<a href="#"><img src="images/albums/1.png" class="album-thumb"></a>
+				<a href="#"><img src="images/albums/1.png" class="album-thumb"></a>
+				<a href="#"><img src="images/albums/1.png" class="album-thumb"></a>
+			</div>
+		</div>
 	</div>
