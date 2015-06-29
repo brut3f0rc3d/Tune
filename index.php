@@ -228,6 +228,20 @@
 			return false;
 		});
 	});
+	(function(){
+		setInterval(function(){
+			if($(window).scrollTop()>200){
+				$(".navbar").css('background', 'rgba(239, 235, 235, 0.88)');
+				console.log('Change');
+			}
+			else{
+				$(".navbar").css('background', 'white');
+				console.log('Original');
+			}
+		});
+	})();
+  
+
 	</script>
 </body>
 </html>

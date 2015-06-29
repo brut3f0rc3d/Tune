@@ -55,13 +55,16 @@ nav form button{
 	border-radius: 0px!important;
 }
 .navbar-ul{
-	margin-top: 10px;
+	margin-top: 8px;
 }
 .navbar-ul li a{
 	text-transform: lowercase;
 }
 nav .navbar-brand{
 	padding: 10px;
+}
+.nav>li>a:hover, .nav>li>a:focus{
+	background-color: rgba(255, 255, 255, 0.882353)!important;
 }
 /*Slides*/
 
@@ -146,4 +149,20 @@ nav .navbar-brand{
 .album-thumb{
 	height: 150px;
 	width: 150px;
+}
+
+
+/*Lists*/
+.list-header{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	padding: 5px;
+}
+.col-md-offset-1-2{
+	margin-left: 4.166666665%;
+}
+.list-item{
+	box-shadow: 0px 0px 1px 1px #ccc;
+    padding: 10px;
 }
