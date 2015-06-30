@@ -8,6 +8,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div id="fake" style="width:100%; height:80px; background-color: black;"></div>
@@ -25,7 +26,7 @@
 					<div class="form-group">
 						<input type="text" autofocus placeholder="Email Address (johndoe@example.com)" class="form-control">
 					</div>
-					<button type="submit" class="btn btn-default">Play</button>
+					<button type="submit" class="btn btn-default" id="play">Play</button>
 				</form>
 				<ul class="nav navbar-nav navbar-right navbar-ul">
 					<li><a href="#about" id="about-link">ABOUT US</a></li>
@@ -243,5 +244,72 @@
   
 
 	</script>
+
+
+
+	<!--Modal-->
+
+<div id="tuneModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content container-fluid custom-modal">
+     	<div id="registrationForm">
+     		<div style="font-size:28px;">let's get you registered</div>
+     		<hr>
+     			<form id="registration-form">
+		<div class="form-group">
+			<label>Your email address.</label>
+			<p class="form-control-static" id="tbEmail">john.doe@example.com</p>
+		</div>
+		<div class="form-group">
+			<label>Your name, please</label>
+			<input class="form-control" placeholder="John Doe" type="text" id="tbName">
+		</div>
+		
+		<div class="form-group">
+			<label>Please enter a strong password</label>
+			<input class="form-control" placeholder="Password must be atleast 6 chars in length" type="text" id="tbPassword">
+		</div>
+		<div class="form-group">
+			<label>Please enter the password again to confirm</label>
+			<input class="form-control" placeholder="Password must be atleast 6 chars in length" type="text" id="tbConfirmPassword">
+		</div>
+		<div class="form-group">
+			<label>Your mobile number, please. We won't spam you, we promise.</label>
+			<input class="form-control" placeholder="10 digits only." type="text" id="tbMobile">
+		</div>
+		<div class="form-group">
+			<label>Sex</label><br>
+			<input type="radio" id="rbSexF" value="F" name="sex">&nbsp;Female<br>
+			<input type="radio" id="rbSexM" value="M" name="sex">&nbsp;Male<br>
+			<input type="radio" id="rbSexO" value="O" name="sex">&nbsp;Others
+		</div>
+		<div class="form-group">
+			<label>Choose a picture for your profile.</label>
+			<input type="file" id="fuProfilePicture">
+		</div>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox">I have read the terms and conditions, and I agree to them.
+			</label>
+		</div>
+		<button type="submit" class="btn btn-default" id="btnSubmit">Submit</button>
+	</form>
+     	</div>
+     	<div id="loginForm"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+$("#play").click(function(e){
+	e.preventDefault();
+	$("#tuneModal").modal({
+		backdrop: 'static',
+		show:'true',
+		keyboard: 'true'
+	});
+});
+    
+</script>
 </body>
 </html>
