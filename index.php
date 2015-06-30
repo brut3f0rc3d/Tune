@@ -233,11 +233,11 @@
 		setInterval(function(){
 			if($(window).scrollTop()>200){
 				$(".navbar").css('background', 'rgba(239, 235, 235, 0.88)');
-				console.log('Change');
+				
 			}
 			else{
 				$(".navbar").css('background', 'white');
-				console.log('Original');
+				
 			}
 		});
 	})();
@@ -289,13 +289,22 @@
 		</div>
 		<div class="checkbox">
 			<label>
-				<input type="checkbox">I have read the terms and conditions, and I agree to them.
+				<input type="checkbox" name="terms">I have read the terms and conditions, and I agree to them.
 			</label>
 		</div>
 		<button type="submit" class="btn btn-default" id="btnSubmit">Submit</button>
 	</form>
      	</div>
-     	<div id="loginForm"></div>
+     	<div id="loginForm" class="invisible">
+     		<h1 style="text-align: center">Welcome back</h1>
+     		<hr>
+     		<img src="images/user.png" class="user-image">
+     		<h2 style="text-align: center">Varun Hisaria</h2>
+     		<h3 style="text-align: center">Please enter your password to continue.</h3>
+     		<div class="form-group">
+			<input class="form-control" placeholder="Password, please." type="password" id="tbLoginPassword">
+			</div>
+     	</div>
     </div>
   </div>
 </div>
@@ -307,6 +316,56 @@ $("#play").click(function(e){
 		backdrop: 'static',
 		show:'true',
 		keyboard: 'true'
+	});
+});
+
+var errors=[];
+        
+$("#btnLogin").click(function(e){
+    e.preventDefault();
+    var email_id = $("#tbEmail").val();
+    var json = [{ email: email_id }];
+    console.log(JSON.stringify(json[0]));
+    $.ajax({
+        url: "Default.aspx/EmailExists",
+        type: "POST",
+        data: JSON.stringify(json[0]),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success:function(result){
+               console.log(result);
+                },
+        error:function(xhr, desc, err){
+                console.log(desc);
+                 console.log(err);
+                }
+            });
+        });
+
+$("#btnSubmit").click(function(e){
+	e.preventDefault();
+	var email_id=$("#tbEmail").val();
+	var password = $("#tbPassword").val();
+	var name = $("#tbName").val();
+	var mobile = $("#tbMobile").val();
+	var sex = $("input[name='gender']:checked").val();
+	var terms = 1;
+	var json = [{UserName: name, Email: email_id, UserPassword: password, Mobile: mobile, Gender: sex, Verfied: 0, Agreement: terms}];
+	console.log(JSON.stringify(json[0]));
+	
+	$.ajax({
+		url: "Default.aspx/RegisterUser",
+		type: "POST",
+		data: JSON.stringify(json[0]),
+		contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success:function(result){
+               console.log(result);
+                },
+        error:function(xhr, desc, err){
+                console.log(desc);
+                 console.log(err);
+                }
 	});
 });
     

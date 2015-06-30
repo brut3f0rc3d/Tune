@@ -192,3 +192,7 @@ nav .navbar-brand{
 .custom-modal{
 	padding: 20px;
 }
+
+.invisible{
+	display: none;
+}
