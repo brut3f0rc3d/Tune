@@ -196,3 +196,21 @@ nav .navbar-brand{
 .invisible{
 	display: none;
 }
+
+/*Login Screen*/
+.user-image{
+	    height: 200px;
+    width: 200px;
+    background-color: rgba(128, 128, 128, 0.19);
+    border-radius: 50%;
+}
+
+.user-card{
+	width: 400px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    padding: 50px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.21), 0px 0px 4px 5px rgba(230, 227, 227, 0.81) inset;
+    background-color: #F9F8F2;
+
+}

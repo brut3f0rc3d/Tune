@@ -252,7 +252,7 @@
 <div id="tuneModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg">
     <div class="modal-content container-fluid custom-modal">
-     	<div id="registrationForm">
+     	<div id="registrationForm" class="invisible">
      		<div style="font-size:28px;">let's get you registered</div>
      		<hr>
      			<form id="registration-form">
@@ -295,14 +295,18 @@
 		<button type="submit" class="btn btn-default" id="btnSubmit">Submit</button>
 	</form>
      	</div>
-     	<div id="loginForm" class="invisible">
+     	<div id="loginForm">
      		<h1 style="text-align: center">Welcome back</h1>
      		<hr>
-     		<img src="images/user.png" class="user-image">
-     		<h2 style="text-align: center">Varun Hisaria</h2>
-     		<h3 style="text-align: center">Please enter your password to continue.</h3>
-     		<div class="form-group">
-			<input class="form-control" placeholder="Password, please." type="password" id="tbLoginPassword">
+     		<div class="user-card">
+	     		<div style="text-align: center">
+	     			<img src="images/user.png" class="user-image">
+	     		</div>
+	     		<h2 style="text-align: center">Varun Hisaria</h2>
+	     		<h3 style="text-align: center">Please enter your password to continue.</h3>
+	     		<div class="form-group">
+					<input class="form-control" placeholder="Password, please." type="password" id="tbLoginPassword">
+				</div>
 			</div>
      	</div>
     </div>

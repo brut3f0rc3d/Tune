@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<form>
+		<input type="file" name="ProfilePicture" id="profile">
+		<button type="submit" id="upload">Upload</button>
+	</form>
+	<div class="progress-bar"></div>
+	<script type="text/javascript">
+		$("#upload").click(function(e){
+			e.preventDefault();
+			var file = $("#profile");
+			console.log(file);
+			var formdata = new FormData();
+			formdata.append("file", file);
+			console.log(formdata);
+		});
+	</script>
+</body>
+</html>
